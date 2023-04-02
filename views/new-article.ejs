@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Mini blog app</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <link rel="stylesheet" href="/css/index.css">
+  </head>
+<body  style="background-color: #8fb5d8;">
+    <nav class="navbar navbar-expand-lg navbar-light bg-primary">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <a class="navbar-brand" href="/">Home</a>
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+          <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+            <li class="nav-item active">
+              <a class="nav-link" href="/articles">Articles</a>
+            </li>
+
+          </ul>
+  
+        </div>
+      </nav>
+    <section class="vh-80 mt-4">
+        <div class="container h-80">
+            <div class="row d-flex justify-content-center align-items-center h-100">
+                <div class="col-xl-10">
+                    <form method="post" action="/add-new">
+                        <div class="card" style="border-radius: 15px;">
+                            <div class="card-body">
+                                <div class="row align-items-center pt-2 pb-3">
+                                    <div class="col-md-3 ps-5">
+                                        <h6 class="mb-0">Title</h6>
+                                    </div>
+                                    <div class="col-md-9 pe-5"><input class="form-control form-control-lg" type="text" name="title" /></div>
+                                </div>
+                                <div class="row align-items-center pt-2 pb-3">
+                                    <div class="col-md-3 ps-5">
+                                        <h6 class="mb-0">Introduction</h6>
+                                    </div>
+                                    <div class="col-md-9 pe-5"><input class="form-control form-control-lg" type="text" name="introduction" /></div>
+                                </div>
+                                <div class="row align-items-center pt-2 pb-3">
+                                    <div class="col-md-3 ps-5">
+                                        <h6 class="mb-0">Content</h6>
+                                    </div>
+                                    <div class="col-md-9 pe-5"><textarea class="form-control form-control-lg" type="text" name="text"></textarea></div>
+                                </div>
+                                <div class="row align-items-center pt-2 pb-3">
+                                    <div class="col-md-3 ps-5">
+                                        <h6 class="mb-0">Conclusion</h6>
+                                    </div>
+                                    <div class="col-md-9 pe-5"><textarea class="form-control form-control-lg" type="text" name="conclusion"></textarea></div>
+                                </div>
+                                <div class="row align-items-center pt-2 pb-3">
+                                    <div class="col-md-3 ps-5">
+                                        <h6 class="mb-0">Link to sources</h6>
+                                    </div>
+                                    <div class="col-md-9 pe-5"><input class="form-control form-control-lg" type="text" name="link"></div>
+                                </div>
+                                <div class="row align-items-center pt-2 pb-3">
+                                    <div class="col-md-3 ps-5">
+                                        <h6 class="mb-0">Author</h6>
+                                    </div>
+                                    <div class="col-md-9 pe-5"><input class="form-control form-control-lg" type="text" name="author" /></div>
+                                </div>
+                                <div class="row align-items-center pt-2 pb-3">
+                                    <div class="col-md-3 ps-5">
+                                        <h6 class="mb-0">Topic</h6>
+                                    </div>
+                                    <div class="col-md-9 pe-5"><input class="form-control form-control-lg" type="text" name="topic" /></div>
+                                </div>
+                            
+                                <div class="row align-items-center pt-2 pb-3">
+                                    <div class="col-md-3 ps-5">
+                                        <h6 class="mb-0">Check once again before submitting!</h6>
+                                    </div>
+                                    <div class="col-md-9 pe-5 ml-9"><input class="form-control form-control-lg btn-primary" type="submit" /></div>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.7.1.min.js"></script>
+    <script type="text/javascript" src="/js/article.js"></script>
+</body>
+
+</html>
