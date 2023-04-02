@@ -16,7 +16,7 @@ router.get('/articles', (_, res) => {
     })
 })
 
-//Fetching specific article
+//Fetching specific article (GET Article by id)
 router.get('/articles/article/:id', (req, res) => {
     let queryID = req.params['id']
     const article = articles.find(function(article) {
