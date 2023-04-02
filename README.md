@@ -5,7 +5,7 @@ Welcome to Mini blog app where you can find different types of articles in diffe
 #### Intsructions
 1. Download the source code
 ```bash 
-git clone [link to github repo]
+git clone https://github.com/00014232/BlogApp.git
 ```
 
 2. Install all dependencies
@@ -25,5 +25,6 @@ node app
 
 
 ### Public repo available at:
+https://github.com/00014232/BlogApp.git
 
 ### Blog App on Glitch:
